@@ -1,9 +1,9 @@
 {
-    "name": "endpot/camunda-rest-client",
+    "name": "saimaz/camunda-rest-client",
     "description": "camunda rest client",
     "type": "library",
     "require": {
-        "guzzlehttp/guzzle": "^6.0"
+        "guzzlehttp/guzzle": "^6.0|^7.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.0"
