@@ -236,6 +236,7 @@ class BasicService
         }
 
         $client = new Client();
+        $option['verify'] = false;
         try {
             $response = $client->request($this->requestMethod, $this->restApiUrl . $this->requestUrl, $option);
         } catch (RequestException $requestException) {
