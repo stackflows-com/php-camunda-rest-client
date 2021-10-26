@@ -99,6 +99,7 @@ class TaskRequest extends BasicRequest
         'groupId',
         'type',
         'variables',
-        'message'
+        'message',
+        'escalationCode',
     ];
 }
