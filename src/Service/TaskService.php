@@ -237,4 +237,15 @@ class TaskService extends BasicService
 
         return $this->getResponseCode() == 204 ? true : false;
     }
+
+    public function escalate($taskId, TaskRequest $taskRequest)
+    {
+        $this->setRequestUrl('/task/' . $taskId . '/bpmnEscalation')
+            ->setRequestMethod('POST')
+            ->setRequestContentType('JSON')
+            ->setRequestObject($taskRequest)
+            ->run();
+
+        return $this->getResponseCode() == 204 ? true : false;
+    }
 }
